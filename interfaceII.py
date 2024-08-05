@@ -18,7 +18,7 @@ preemptive_prompts = [
 attack_prompts = [
     "Spoofing",
     "DDoS",
-    "DoS"
+    "DoS",
     "MQTT",
     "Recon"
 ]
@@ -47,7 +47,7 @@ def simulate_attack():
         st.session_state.attack_description = selected_prompt
 
     attack_description = st.text_area(
-        "Attack Description",
+        "Attack Type",
         value=st.session_state.get('attack_description', ''),
         placeholder="Describe the attack scenario here..."
     )
